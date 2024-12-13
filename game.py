@@ -33,3 +33,8 @@ st.text(str(st.session_state['wrong']))
 
 st.button('Go!', on_click=next_question, args=(team.lower(),answer.lower()))
 
+st.text('In case you are lost, you can call us/message us/send your location on Whatsapp:')
+st.text('Bori: +36 30 648 0643')
+st.text('Edina: +36 20 272 0464')
+st.text('Szabi: +36 30 556 6720')
+
