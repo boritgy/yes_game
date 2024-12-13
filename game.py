@@ -6,7 +6,7 @@ sh = workbook.active
 
 def next_question(team, answer):
     for row in range(1, sh.max_row + 1):
-        if sh.cell(row=row, column=1).value == team and answer in str(sh.cell(row=row, column=2).value).split(","):
+        if sh.cell(row=row, column=1).value == team and answer in str(sh.cell(row=row, column=4).value).split(","):
             st.session_state["default"] = sh.cell(row=row, column=3).value
             st.session_state["format"] = sh.cell(row=row, column=5).value
             st.session_state.answer = ""
